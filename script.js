@@ -35,3 +35,17 @@ const filmes = [
 ]
 
 // escreva seu código abaixo 👇🏻
+
+for(let item of filmes){
+  console.log(`${item.titulo}, de ${item.ano}, dirigido por ${item.diretor}`)
+  let Elenco = "Tem no elenco: "
+
+  for(let Ator of item.elenco){
+    if(Elenco !== "Tem no elenco: "){
+      Elenco += ", "
+    }
+    Elenco += Ator
+  }
+
+  console.log(Elenco)
+}
